@@ -37,7 +37,7 @@ class jneWeightCalculate {
 
 			// Proses pembulatan
 			// Apabila angka di belakang koma dibawah 3, bulatkan kebawah. Apabila diatas 2 bulatkan angka keatas dan simpan ke variabel $weight
-			$weight = ($limitWeight[1] < $limitTolerance) ? floor($totalWeight) : ceil($totalWeight); 
+			$weight = ($limitWeight[1] <= $limitTolerance) ? floor($totalWeight) : ceil($totalWeight); 
 
 		}
 
